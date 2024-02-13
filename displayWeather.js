@@ -13,10 +13,10 @@ const displayWeather = function(data) {
   displayHumidity.textContent = humidity;
 
   let displayTemp = document.querySelector('.temperature-actual');
-  displayTemp.textContent = temp;
+  displayTemp.textContent = `${temp} °C`;
 
   let displayTempFeels = document.querySelector('.temperature-min');
-  displayTempFeels.textContent = feelsTemp;
+  displayTempFeels.textContent = `${feelsTemp} °C` ;
 
   let displayIcon = document.querySelector('.weather__ico');
   displayIcon.src = `https://openweathermap.org/img/wn/${icon}@4x.png`
